@@ -5,22 +5,31 @@ let q1test = 15;
 
 //Add code here
 if (q1test % 3 === 0 && q1test % 5 === 0)
-  console.log(`the entered ${q1test} is devisible by 3 and 5`);
+  console.log(`the entered ${q1test} is divisible by 3 and 5`);
 else if (q1test % 3 === 0)
-  console.log(`the entered ${q1test} is devisible by 3`);
+  console.log(`the entered ${q1test} is divisible by 3`);
 else if (q1test % 5 === 0)
-  console.log(`the entered ${q1test} is devisible by 5`);
+  console.log(`the entered ${q1test} is divisible by 5`);
 
 //Q2. Using an if-else statement, determin is a year is a leap year or not.
 //Research what are the conditions to be considered a leap year.
 
-let year = 1999;
+let year = 2000;
 // let year = 2000;
 // let year = 1900;
 // let year = 2024;
 
 //Add code here`
 
+if ((year % 100 === 0 && year % 400 === 0) || year % 4 === 0) {
+  console.log(`This ${year} is a leap year!`);
+} else console.log(`This ${year} is not a leap year!`);
+
 //Q3. Use a loop to print all the numbers from 1 to 100 that are divisible by 3 or 4.
 
 //Add code here
+
+for (let i = 1; i <= 100; i++) {
+  if (i % 3 === 0 && i % 4 === 0)
+    console.log(`number ${i} is divisible by 3 and 4`);
+}
